@@ -74,7 +74,7 @@
             <version>1.14</version>
         </dependency>
 
-        <!--测试框架-->
+        <!--testng 测试框架-->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -82,7 +82,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--MockitoAPI测试-->
+        <!--Mockito API测试-->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
@@ -90,11 +90,18 @@
             <scope>test</scope>
         </dependency>
 
-        <!--hutool加解密工具-->
+        <!--hutool 加解密工具-->
         <dependency>
             <groupId>com.xiaoleilu</groupId>
             <artifactId>hutool-all</artifactId>
             <version>3.0.9</version>
+        </dependency>
+
+        <!--tink 密码库-->
+        <dependency>
+            <groupId>com.google.crypto.tink</groupId>
+            <artifactId>tink</artifactId>
+            <version>1.2.0</version>
         </dependency>
 
     </dependencies>

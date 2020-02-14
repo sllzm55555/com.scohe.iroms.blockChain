@@ -1,5 +1,6 @@
 package com.scohe.iroms.orientintelligent.utils;
 
+import com.xiaoleilu.hutool.crypto.digest.DigestUtil;
 import org.apache.commons.codec.binary.Hex;
 
 import java.io.UnsupportedEncodingException;
@@ -22,5 +23,10 @@ public class SHAUtils {
         }
         return encdeStr;
     }
+
+    public static String getSHA256StrHutool(String originalContent){
+        return DigestUtil.sha256Hex(originalContent);
+    }
+
 
 }

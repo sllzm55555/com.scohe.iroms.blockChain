@@ -65,7 +65,7 @@ public class BlockChain {
                 JSONObject.toJSONString(this.getTransactions()) +
                 JSONObject.toJSONString(this.getChain()) +
                 this.getPreviousHash() + this.getProof() + this.getIndex() + this.getTimestamp();
-        hash = SHAUtils.getSHA256Str(json);
+        hash = SHAUtils.getSHA256StrHutool(json);
         return hash;
     }
 
@@ -113,7 +113,7 @@ public class BlockChain {
 
     public Boolean validProof(Integer lastProof, Integer proof) {
         System.out.println("validProof==>lastProof:" + lastProof + ",proof:" + proof);
-        String guessHash = SHAUtils.getSHA256Str(String.format("{%d}{%d}", lastProof, proof));
+        String guessHash = SHAUtils.getSHA256StrHutool(String.format("{%d}{%d}", lastProof, proof));
         return guessHash.startsWith("00");
     }
 
