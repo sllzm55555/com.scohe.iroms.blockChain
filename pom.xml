@@ -11,8 +11,8 @@
     <groupId>com.scohe.iroms</groupId>
     <artifactId>orientintelligent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>com.scohe.iroms.block</name>
-    <description>Demo project for Java blockQueue</description>
+    <name>com.scohe.iroms.blockChain</name>
+    <description>Demo project for Java blockChain</description>
 
     <properties>
         <java.version>1.8</java.version>
