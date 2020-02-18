@@ -104,6 +104,20 @@
             <version>1.2.0</version>
         </dependency>
 
+        <!--websocket-->
+        <dependency>
+            <groupId>org.java-websocket</groupId>
+            <artifactId>Java-WebSocket</artifactId>
+            <version>1.3.8</version>
+        </dependency>
+
+        <!--guava 文件操作-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>25.1-jre</version>
+        </dependency>
+
     </dependencies>
 
     <build>
