@@ -1,5 +1,7 @@
 package com.scohe.iroms.orientintelligent.utils;
 
+import com.scohe.iroms.orientintelligent.common.MerkleTree;
+
 import java.util.List;
 
 /**

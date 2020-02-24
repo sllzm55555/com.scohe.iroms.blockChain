@@ -1,6 +1,6 @@
 package com.scohe.iroms.orientintelligent;
 
-import com.scohe.iroms.orientintelligent.utils.MerkleTree;
+import com.scohe.iroms.orientintelligent.common.MerkleTree;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;

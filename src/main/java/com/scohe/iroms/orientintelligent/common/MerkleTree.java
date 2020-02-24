@@ -1,6 +1,6 @@
-package com.scohe.iroms.orientintelligent.utils;
+package com.scohe.iroms.orientintelligent.common;
 
-import com.scohe.iroms.orientintelligent.model.MerkleTreeNode;
+import com.scohe.iroms.orientintelligent.utils.SHAUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -15,5 +15,4 @@ public class ContentInfo {
     private String sign;
     private String hash;
 
-
 }

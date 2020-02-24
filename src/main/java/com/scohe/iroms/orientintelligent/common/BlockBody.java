@@ -1,5 +1,6 @@
-package com.scohe.iroms.orientintelligent.model;
+package com.scohe.iroms.orientintelligent.common;
 
+import com.scohe.iroms.orientintelligent.model.ContentInfo;
 import lombok.Data;
 
 import java.util.List;

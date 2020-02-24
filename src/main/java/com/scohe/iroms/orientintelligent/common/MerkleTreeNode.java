@@ -1,4 +1,4 @@
-package com.scohe.iroms.orientintelligent.model;
+package com.scohe.iroms.orientintelligent.common;
 
 import com.scohe.iroms.orientintelligent.utils.SHAUtils;
 import lombok.Data;

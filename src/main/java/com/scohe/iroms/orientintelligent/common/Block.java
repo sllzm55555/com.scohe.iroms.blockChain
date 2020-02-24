@@ -1,4 +1,4 @@
-package com.scohe.iroms.orientintelligent.model;
+package com.scohe.iroms.orientintelligent.common;
 
 import com.xiaoleilu.hutool.crypto.digest.DigestUtil;
 import lombok.Data;
