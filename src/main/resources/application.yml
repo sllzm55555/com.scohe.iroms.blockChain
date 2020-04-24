@@ -2,6 +2,16 @@ server:
   port: 8081
 
 spring:
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: 192.168.0.252:9300
+      repositories:
+        enabled: true
+  elasticsearch:
+    rest:
+      uris: 192.168.0.252:9200
+
   application:
     name: blockChain
   datasource:

@@ -66,7 +66,7 @@ public class MerkleTree {
         parentNode.setRightNode(rightNode);
 
         String hash = leftNode.getHash();
-        String name = String.format("[单节点 %s 的父节点]", leftNode.getName());
+        String name = String.format("[%s和%s 的父节点]", leftNode.getName(), "空节点");
 
         if(rightNode != null){
             hash = SHAUtils.getSHA256StrHutool(hash + rightNode.getHash());

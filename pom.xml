@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.scohe.iroms</groupId>
-    <artifactId>orientintelligent</artifactId>
+    <artifactId>blockChain</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>com.scohe.iroms.blockChain</name>
     <description>Demo project for Java blockChain</description>
@@ -126,18 +126,41 @@
             <version>25.1-jre</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
         <plugins>
-            <plugin>
-                <!--该插件主要用途：构建可执行的JAR -->
+            <!--<plugin>
+                &lt;!&ndash;该插件主要用途：构建可执行的JAR &ndash;&gt;
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <includeSystemScope>true</includeSystemScope>
                 </configuration>
+            </plugin>-->
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>0.4.13</version>
+                <configuration>
+                    <imageName>${project.artifactId}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
             </plugin>
+
         </plugins>
     </build>
 
